@@ -13,7 +13,7 @@ const crawler = new PlaywrightCrawler({
   async requestHandler({ request, page, enqueueLinks, log }) {
     log.info(`Processing ${request.url}...`);
 
-    const locator = page.getByRole("div");
+    const locator = page.getByText("");
     const data = await locator.evaluateAll((divs) => {
       const scrapedData: { value: HTMLDivElement | null }[] = [];
 
