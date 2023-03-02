@@ -1,7 +1,8 @@
 // dynamic routes are used to create pages with dynamic paths.
 // any parameter name (id in here) can be used as a query parameter, when file name is wrapped in square brackets (eg> [id].js).
 // for example, /movies/1234 will be rendered by this page.
-
+// if you want to catch all queries, use [...slug].js . for example, /movies/1234/abc will be rendered by this page.
+ 
 import { useRouter } from "next/router";
 
 export default function Movie() {

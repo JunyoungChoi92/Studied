@@ -14,7 +14,7 @@ export default function Home({ results }) {
                     title,
                 },
             },
-            `/movies/${title}/`
+            `/movies/${title}/` // this is the url that will be shown in the browser. it is optional.
         );
     };
     return (

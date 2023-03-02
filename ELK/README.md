@@ -2,29 +2,10 @@
 
 ===
 
+
 ## 실행
 
-1. ElasticSearch
-
-   - 실행(백그라운드) : $ bin/elasticsearch -d -p els.pid
-
-   - 실행 확인 : curl -XGET localhost:9200 또는 9200 포트로 로컬 페이지 접속.
-
-2. Logstash
-
-   - 실행(백그라운드) : $ nohup bin/logstash -f conf.d/[your_config_file_name].conf -&
-
-   - 실행 확인 : ps -ef | grep logstash
-
-3. Kibana
-
-   - 설정 : $ vim config/kibana.yml
-     server.host: "서버호스트" (default="localhost")
-     elasticsearch.hosts: "elasticsearch호스트" (default="localhost:9200")
-
-   - 실행(백그라운드) : nohup bin/kibana &
-
-   - 실행 확인 : ps -ef | grep node
+[도커 + ELK Install with docker-compose](https://shanepark.tistory.com/241)
 
 ## Structure
 
